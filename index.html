@@ -9,142 +9,224 @@
   </head>
   <body class="font-sans bg-gray-900 text-white">
     <!-- Navigation -->
-    <nav
-      class="flex flex-wrap items-center justify-between p-4 z-20 w-full fixed top-0"
-    >
+    <nav class="flex flex-wrap items-center justify-between p-4 z-20 w-full fixed top-0 bg-gray-900 bg-opacity-90">
       <div class="flex items-center">
-        <img
-          src="/TechHack/src/images/images-removebg-preview.png"
-          alt="Logo"
-          class="w-24 h-auto"
-        />
+        <img src="/TechHack/src/images/images-removebg-preview.png" alt="Logo" class="w-24 h-auto" />
       </div>
       <div class="md:flex space-x-4 font-semibold">
-        <img
-          class="w-5 md:hidden"
-          src="/TechHack/src/images/hamburger.png"
-          alt="menu"
-        />
-
+        <img class="w-5 md:hidden cursor-pointer" src="/TechHack/src/images/hamburger.png" alt="menu" />
         <a href="#" class="hidden md:flex hover:text-blue-400">Home</a>
-        <a href="#" class="hidden md:flex hover:text-blue-400">Pricing</a>
-        <a href="#" class="hidden md:flex hover:text-blue-400">Features</a>
-        <a href="#" class="hidden md:flex hover:text-blue-400">About</a>
+        <a href="#courses" class="hidden md:flex hover:text-blue-400">Courses</a>
+        <a href="#features" class="hidden md:flex hover:text-blue-400">Features</a>
+        <a href="#about" class="hidden md:flex hover:text-blue-400">About</a>
       </div>
       <div class="md:flex space-x-2">
-        <img
-          class="w-5 md:hidden"
-          src="/TechHack/src/images/user-interface.png"
-          alt="signup"
-        />
-        <button
-          class="hidden md:flex bg-blue-500 px-4 py-2 rounded hover:bg-blue-700"
-        >
+        <img class="w-5 md:hidden" src="/TechHack/src/images/user-interface.png" alt="signup" />
+        <button class="hidden md:flex bg-blue-500 px-4 py-2 rounded hover:bg-blue-700 transition duration-300">
           Sign Up
         </button>
-        <button
-          class="hidden md:flex bg-blue-500 px-4 py-2 rounded hover:bg-blue-700"
-        >
+        <button class="hidden md:flex bg-blue-500 px-4 py-2 rounded hover:bg-blue-700 transition duration-300">
           Login
         </button>
       </div>
     </nav>
 
     <!-- Hero Section -->
-    <section
-      class="relative h-screen bg-cover bg-center bg-no-repeat"
-      style="
-        background-image: url('/TechHack/src/images/ruijia-wang-BS9w1QCkJys-unsplash.jpg');
-      "
-    >
-      <!-- Black overlay -->
+    <section class="relative h-screen bg-cover bg-center bg-no-repeat"
+      style="background-image: url('/TechHack/src/images/ruijia-wang-BS9w1QCkJys-unsplash.jpg');">
       <div class="absolute inset-0 bg-black opacity-60"></div>
-
-      <!-- Content -->
-      <div
-        class="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center"
-      >
-        <h1 class="text-3xl md:text-5xl font-bold mb-4">Education Hub</h1>
+      <div class="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center">
+        <h1 class="text-3xl md:text-5xl font-bold mb-4">Welcome to Education Hub</h1>
         <p class="text-xl md:text-3xl text-blue-200 font-semibold mb-6">
-          Empowering Minds, Enriching Futures.
+          Transform Your Future Through Quality Education
         </p>
         <p class="text-md md:text-xl text-gray-200 max-w-2xl mb-8">
-          Join a vibrant community where knowledge meets opportunity. We offer
-          more than academics — we empower students with real-world learning and
-          mentorship.
+          Access world-class courses, expert instructors, and a supportive learning community. Start your journey towards success today!
         </p>
 
-        <!-- Feedback Form -->
-        <form class="w-full max-w-md space-y-4">
-          <div class="text-left w-full">
-            <label for="feedback" class="block text-sm font-bold mb-1"
-              >Feedback Form</label
-            >
-            <input
-              type="text"
-              id="feedback"
-              name="feedback"
-              placeholder="Share your thoughts..."
-              class="w-full px-4 py-2 rounded bg-white text-black focus:ring-2 focus:ring-indigo-500 outline-none"
-            />
-          </div>
-          <button
-            type="submit"
-            class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 rounded"
-          >
-            Submit
+        <!-- CTA Buttons -->
+        <div class="flex gap-4 mb-12">
+          <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition duration-300">
+            Start Learning
           </button>
-          <p class="text-sm text-blue-300 mt-2">
-            Give your feedback and help us improve!
-          </p>
+          <button class="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-3 rounded-lg transition duration-300">
+            Browse Courses
+          </button>
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+          <div class="text-center">
+            <h3 class="text-4xl font-bold text-blue-400">50+</h3>
+            <p class="text-gray-300">Expert Instructors</p>
+          </div>
+          <div class="text-center">
+            <h3 class="text-4xl font-bold text-blue-400">100+</h3>
+            <p class="text-gray-300">Online Courses</p>
+          </div>
+          <div class="text-center">
+            <h3 class="text-4xl font-bold text-blue-400">10k+</h3>
+            <p class="text-gray-300">Happy Students</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Courses -->
+    <section id="courses" class="py-16 px-4 bg-gray-800">
+      <h2 class="text-3xl font-bold text-center mb-12">Featured Courses</h2>
+      <div class="grid md:grid-cols-2 2xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition duration-300">
+          <img src="/TechHack/src/images/lnct.jpg" alt="Course" class="w-full h-48 object-cover" />
+          <div class="p-6 text-gray-900">
+            <h5 class="text-xl font-bold mb-2">Complete Java Development</h5>
+            <p class="text-gray-600 mb-4">
+              Master Java programming from basics to advanced concepts. Learn OOP, collections, multithreading, and more.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-blue-600 font-bold">$49.99</span>
+              <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300">
+                Enroll Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition duration-300">
+          <img src="/TechHack/src/images/lnct.jpg" alt="Course" class="w-full h-48 object-cover" />
+          <div class="p-6 text-gray-900">
+            <h5 class="text-xl font-bold mb-2">Full Stack Web Development</h5>
+            <p class="text-gray-600 mb-4">
+              Become a full-stack developer with modern technologies. Learn HTML, CSS, JavaScript, React, Node.js, and more.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-blue-600 font-bold">$79.99</span>
+              <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300">
+                Enroll Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition duration-300">
+          <img src="/TechHack/src/images/lnct.jpg" alt="Course" class="w-full h-48 object-cover" />
+          <div class="p-6 text-gray-900">
+            <h5 class="text-xl font-bold mb-2">Spring Boot Mastery</h5>
+            <p class="text-gray-600 mb-4">
+              Build enterprise-grade applications with Spring Boot. Learn microservices, security, and best practices.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-blue-600 font-bold">$69.99</span>
+              <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300">
+                Enroll Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition duration-300">
+          <img src="/TechHack/src/images/lnct.jpg" alt="Course" class="w-full h-48 object-cover" />
+          <div class="p-6 text-gray-900">
+            <h5 class="text-xl font-bold mb-2">Mobile App Development</h5>
+            <p class="text-gray-600 mb-4">
+              Create cross-platform mobile apps using React Native. Build real-world projects and deploy to app stores.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-blue-600 font-bold">$59.99</span>
+              <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300">
+                Enroll Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 px-4 bg-gray-900">
+      <h2 class="text-3xl font-bold text-center mb-12">Why Choose Us</h2>
+      <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div class="text-center p-6">
+          <div class="text-4xl mb-4">🎓</div>
+          <h3 class="text-xl font-bold mb-4">Expert Instructors</h3>
+          <p class="text-gray-400">Learn from industry professionals with years of real-world experience.</p>
+        </div>
+        <div class="text-center p-6">
+          <div class="text-4xl mb-4">💻</div>
+          <h3 class="text-xl font-bold mb-4">Hands-on Projects</h3>
+          <p class="text-gray-400">Build real-world projects to strengthen your portfolio.</p>
+        </div>
+        <div class="text-center p-6">
+          <div class="text-4xl mb-4">🌟</div>
+          <h3 class="text-xl font-bold mb-4">Career Support</h3>
+          <p class="text-gray-400">Get guidance on resume building and job placement assistance.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feedback Form -->
+    <section class="py-16 px-4 bg-gray-800">
+      <div class="max-w-md mx-auto">
+        <h2 class="text-2xl font-bold text-center mb-8">Share Your Feedback</h2>
+        <form class="space-y-4">
+          <div>
+            <label for="name" class="block text-sm font-bold mb-1">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name"
+              class="w-full px-4 py-2 rounded bg-white text-black focus:ring-2 focus:ring-blue-500 outline-none" />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-bold mb-1">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email"
+              class="w-full px-4 py-2 rounded bg-white text-black focus:ring-2 focus:ring-blue-500 outline-none" />
+          </div>
+          <div>
+            <label for="feedback" class="block text-sm font-bold mb-1">Feedback</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="Share your thoughts..."
+              class="w-full px-4 py-2 rounded bg-white text-black focus:ring-2 focus:ring-blue-500 outline-none"></textarea>
+          </div>
+          <button type="submit"
+            class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded transition duration-300">
+            Submit Feedback
+          </button>
         </form>
       </div>
     </section>
-    <!-- Card -->
-    <section class="p-4 m-2">
-      <div class="card grid md:grid-cols-2 2xl:grid-cols-4 gap-2 justify-center">
-        <div class="p-1 flex flex-col gap-2 flex-wrap justify-center bg-white text-black">
-          <img src="/TechHack/src/images/lnct.jpg" alt="Course" />
-          <h5>Core Java</h5>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
-            praesentium consequuntur accusamus, obcaecati odit officia
-            voluptatum sequi labore voluptatibus? Maxime expedita dolores
-            placeat temporibus perspiciatis.q
-          </p>
-          <a href="#">click Here</a>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 px-4">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-white font-bold mb-4">Education Hub</h3>
+          <p>Empowering minds through quality education and practical learning experiences.</p>
         </div>
-        <div class="p-1 flex flex-col gap-2 flex-wrap justify-center bg-white text-black">
-          <img src="/TechHack/src/images/lnct.jpg" alt="Course" />
-          <h5>Web Development</h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            expedita assumenda animi unde nisi labore atque harum, praesentium
-            numquam veniam eveniet cumque vel?Lorem ipsum dolor sit amet.
-          </p>
-          <a href="#">click Here</a>
+        <div>
+          <h4 class="text-white font-bold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white">About Us</a></li>
+            <li><a href="#" class="hover:text-white">Courses</a></li>
+            <li><a href="#" class="hover:text-white">Contact</a></li>
+          </ul>
         </div>
-        <div class="p-1 flex flex-col gap-2 flex-wrap justify-center bg-white text-black">
-          <img src="/TechHack/src/images/lnct.jpg" alt="Course" />
-          <h5>SpringBoot</h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            aspernatur rerum perferendis accusamus, quaerat iste delectus rem,
-            veniam libero minima enim nemo in debitis eum.
-          </p>
-          <a href="#">click Here</a>
+        <div>
+          <h4 class="text-white font-bold mb-4">Contact Us</h4>
+          <ul class="space-y-2">
+            <li>Email: info@educationhub.com</li>
+            <li>Phone: +1 234 567 890</li>
+            <li>Address: 123 Education Street</li>
+          </ul>
         </div>
-        <div class="p-1 flex flex-col gap-2 flex-wrap justify-center bg-white text-black">
-          <img src="/TechHack/src/images/lnct.jpg" alt="Course" />
-          <h5>Development</h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            aspernatur rerum perferendis accusamus, quaerat iste delectus rem,
-            veniam libero minima enim nemo in debitis eum.
-          </p>
-          <a href="#">click Here</a>
+        <div>
+          <h4 class="text-white font-bold mb-4">Follow Us</h4>
+          <div class="flex space-x-4">
+            <a href="#" class="hover:text-white">Twitter</a>
+            <a href="#" class="hover:text-white">Facebook</a>
+            <a href="#" class="hover:text-white">LinkedIn</a>
+          </div>
         </div>
       </div>
-    </section>
+      <div class="text-center mt-8 pt-8 border-t border-gray-800">
+        <p>&copy; 2025 Education Hub. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
