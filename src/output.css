@@ -67,6 +67,7 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --font-Inter: "Inter", sans-serif;
   }
 }
 @layer base {
@@ -517,6 +518,9 @@
   .border-gray-300 {
     border-color: var(--color-gray-300);
   }
+  .border-gray-500 {
+    border-color: var(--color-gray-500);
+  }
   .border-gray-600 {
     border-color: var(--color-gray-600);
   }
@@ -643,6 +647,9 @@
   .text-right {
     text-align: right;
   }
+  .font-Inter {
+    font-family: var(--font-Inter);
+  }
   .font-sans {
     font-family: var(--font-sans);
   }
@@ -739,6 +746,9 @@
   }
   .text-gray-400 {
     color: var(--color-gray-400);
+  }
+  .text-gray-500 {
+    color: var(--color-gray-500);
   }
   .text-gray-600 {
     color: var(--color-gray-600);
