@@ -770,6 +770,38 @@
         <p>&copy; 2025 Education Hub. All rights reserved.</p>
       </div>
     </footer>
-    <!-- <script src="/TechHack/src/toggle.js"></script> -->
+    <script>
+      // Mobile menu button functionality
+document.addEventListener('DOMContentLoaded', () => {
+  const menuButton = document.querySelector('[data-menu-button]');
+  const mobileMenu = document.querySelector('[data-mobile-menu]');
+  const loginButton = document.querySelector('[data-login-button]');
+  const loginMenu = document.querySelector('[data-login-menu]');
+
+  // Toggle mobile menu
+  menuButton?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+    mobileMenu?.classList.toggle('flex');
+  });
+
+  // Toggle login menu
+  loginButton?.addEventListener('click', () => {
+    loginMenu?.classList.toggle('hidden');
+    loginMenu?.classList.toggle('flex');
+  });
+
+  // Close menus when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!menuButton?.contains(e.target) && !mobileMenu?.contains(e.target)) {
+      mobileMenu?.classList.add('hidden');
+      mobileMenu?.classList.remove('flex');
+    }
+    if (!loginButton?.contains(e.target) && !loginMenu?.contains(e.target)) {
+      loginMenu?.classList.add('hidden');
+      loginMenu?.classList.remove('flex');
+    }
+  });
+});
+    </script>
   </body>
 </html>
